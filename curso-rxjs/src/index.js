@@ -1,4 +1,6 @@
-import { Observable, observable, Subscriber } from 'rxjs'
+
+//Primer contacto
+/*import { Observable, observable, Subscriber } from 'rxjs'
 
 console.log('RxJS')
 
@@ -26,3 +28,34 @@ const observador = {
 };
 
 observableAlfa$.subscribe(observador);
+*/
+
+//importacion de fromEvent
+//import {fromEvent} from 'rxjs'
+
+//fromEvent MouseMoveEvent
+/*
+const onMouseMove$ = fromEvent(document, "mousemove");
+
+const observadorMouse = {
+    next: (event) => {
+        console.log(event.clientX)
+    },
+};
+
+onMouseMove$.subscribe(observadorMouse);
+*/
+
+//fromEvent KeyDownEvent
+
+/*
+const onKeyDown$ = fromEvent(document, "keydown");
+
+const observadorKeyDown$ = {
+    next: (event) =>{
+        console.log(event.key)
+    }
+};
+
+onKeyDown$.subscribe(observadorKeyDown$)
+*/
